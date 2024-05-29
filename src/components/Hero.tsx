@@ -116,7 +116,7 @@ const Hero: React.FC = () => {
             <FontAwesomeIcon icon={faEnvelope} />
           </SocialMediaIcon>
         </SocialMediaContainer>
-        <DownloadButton href="../Shrutika_Maske_FED.pdf" download>
+        <DownloadButton href="./Shrutika_Maske_FED.pdf" download>
           Download CV <FontAwesomeIcon icon={faDownload} />
         </DownloadButton>
       </HeroContent>

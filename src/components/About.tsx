@@ -84,9 +84,9 @@ const SkillLevel = styled.div<{ level: number }>`
 const skills = [
   { name: 'HTML', level: 90 },
   { name: 'CSS', level: 85 },
-  { name: 'JavaScript', level: 80 },
-  { name: 'React JS', level: 75 },
-  { name: 'TypeScript', level: 70 },
+  { name: 'JavaScript', level: 75 },
+  { name: 'React JS', level: 80 },
+  { name: 'TypeScript', level: 80 },
 ];
 
 const About: React.FC = () => {
@@ -106,7 +106,7 @@ const About: React.FC = () => {
           </ProfileDetail>
           <ProfileDetail>
             <DetailTitle>JOB: </DetailTitle>
-            <DetailContent>Freelancer, Frontend Developer</DetailContent>
+            <DetailContent>Frontend Developer, Freelancer</DetailContent>
           </ProfileDetail>
           <ProfileDetail>
             <DetailTitle>EMAIL: </DetailTitle>

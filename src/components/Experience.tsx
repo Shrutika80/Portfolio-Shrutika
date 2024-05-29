@@ -32,6 +32,17 @@ const Subtitle = styled.div`
   color: #bfbfbf;
 `;
 
+const List = styled.ul`
+  padding-left: 20px;
+`;
+
+const ListItem = styled.li`
+  margin-bottom: 10px;
+  line-height: 1.5;
+  list-style-position: outside;
+  font-size: 16px;
+`;
+
 const workIcon = {
   icon: <FontAwesomeIcon icon={faBriefcase} />,
   iconStyle: { background: 'rgb(33, 150, 243)', color: '#fff' },
@@ -44,21 +55,30 @@ const Experience: React.FC = () => {
       date: 'June 2023 - Present',
       title: 'Senior Software Engineer',
       subtitle: 'Futops Technologies India Private Limited, Pune',
-      desc: 'Mentored and coached junior engineers, fostering a culture of learning and collaboration within the team. Collaborated closely with cross-functional teams to translate business requirements into robust, user-centric applications.',
+      desc:  ['Drives innovation in front-end development, integrating new methodologies to improve performance, accessibility, and maintainability',
+      'The "Road Event Detection" project involves using a Leaflet map to display locations of cameras for monitoring road activity and real-time alerts for events such as traffic congestion',
+      'Implemented caching strategies to store frequently accessed map tiles locally, reducing the number of server requests and improving load times. Initial map load time decreased by 60%, from an average of 5 seconds to 2 seconds.'
+      ],
     },
     {
       icon: workIcon,
       date: 'Nov 2020 - June 2023',
       title: 'Software Engineer',
       subtitle: 'Futops Technologies India Private Limited, Pune',
-      desc: 'Collaborated in Agile environments, translating designs into responsive code, integrating Leaflet maps, and enhancing UI-kit components. Continuously improved codebase by adopting best practices and contributing to code reviews and documentation efforts.',
+      desc: ['Provided mentorship to junior, sharing best practices for working with code integration, and performance optimization. Conducted regular code reviews',
+      'The "People Tracking" project involves using Heatmap.js to display a heatmap that visualizes the density of people in different areas based on real-time data',
+      'Successfully integrated a feature using the company UI kit that allows users to draw and select specific rectangular areas on the map.'
+      ],
     },
     {
       icon: workIcon,
       date: 'July 2019 - Jan 2020',
       title: 'Associate Software Engineer',
       subtitle: 'Infostretch solution Private Limited, Pune',
-      desc: 'Developed customer-facing applications using ReactJs, React Hooks, React-Router, JavaScript, Styled-components, HTML5, and CSS3 with skills in code minification and web debugging.',
+      desc: ['Contributes to small, well-defined tasks and projects.',
+        'Have worked with web debugging tools (Chrome Developer Console).',
+        'Supports the team by fixing bugs and performing minor feature enhancements.'
+        ],
     }
   ];
 
@@ -83,7 +103,11 @@ const Experience: React.FC = () => {
                   {t.subtitle && (
                     <Subtitle>{t.subtitle}</Subtitle>
                   )}
-                  {t.desc && <p>{t.desc}</p>}
+                  <List>
+                    {t.desc.map((item, idx) => (
+                      <ListItem key={idx}>{item}</ListItem>
+                    ))}
+                  </List>
                 </>
               ) : undefined}
             </VerticalTimelineElement>
