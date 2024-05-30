@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/Portfolio-Shrutika/static/css/main.9b38b019.css",
+    "main.js": "/Portfolio-Shrutika/static/js/main.988b4d0d.js",
+    "static/js/453.acca0757.chunk.js": "/Portfolio-Shrutika/static/js/453.acca0757.chunk.js",
+    "static/media/shrutika.png": "/Portfolio-Shrutika/static/media/shrutika.8c2a085c488d1a6c1cff.png",
+    "static/media/newsApp.png": "/Portfolio-Shrutika/static/media/newsApp.c6f043a7d75280ac90a9.png",
+    "static/media/profile.webp": "/Portfolio-Shrutika/static/media/profile.af90d16983a9170e4b75.webp",
+    "static/media/ToDo.jpg": "/Portfolio-Shrutika/static/media/ToDo.59833572a342f8e9122c.jpg",
+    "index.html": "/Portfolio-Shrutika/index.html",
+    "main.9b38b019.css.map": "/Portfolio-Shrutika/static/css/main.9b38b019.css.map",
+    "main.988b4d0d.js.map": "/Portfolio-Shrutika/static/js/main.988b4d0d.js.map",
+    "453.acca0757.chunk.js.map": "/Portfolio-Shrutika/static/js/453.acca0757.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9b38b019.css",
+    "static/js/main.988b4d0d.js"
+  ]
+}
