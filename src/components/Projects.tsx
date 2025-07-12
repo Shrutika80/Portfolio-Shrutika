@@ -15,19 +15,19 @@ export interface ProjectCardProps {
 const projects: ProjectCardProps[] = [
   {
     title: 'ToDo App',
-    description: 'Description of project one.',
+    description: '',
     link: 'https://github.com/Shrutika80/ToDoApp-Javascript',
     imgUrl: TodoList,
   },
   {
     title: 'GitHub Profile Fetch',
-    description: 'Description of project two.',
+    description: '',
     link: 'https://github.com/Shrutika80/GITHUB-profile-reactjs',
     imgUrl: GitHubProfile
   },
   {
     title: 'News App',
-    description: 'Description of project two.',
+    description: '',
     link: 'https://github.com/Shrutika80/News-app-Reactjs',
     imgUrl: NewsApp
   }

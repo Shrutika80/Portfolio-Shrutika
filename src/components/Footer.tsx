@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faInstagram, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { getCurrentYear } from '../Utils';
 
 const FooterContainer = styled.footer`
   background: #333;
@@ -45,7 +46,7 @@ const Footer: React.FC = () => {
           <FontAwesomeIcon icon={faGithub} />
         </a>
       </SocialIcons>
-      <p>&copy; 2024 Shrutika Maske. All rights reserved.</p>
+      <p>&copy; {getCurrentYear()} Shrutika Maske. All rights reserved.</p>
     </FooterContainer>
   );
 };

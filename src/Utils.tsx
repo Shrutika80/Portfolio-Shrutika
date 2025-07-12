@@ -1,12 +1,21 @@
-export const calculateExperience = (startDate: string) => {
-    const currentDate = new Date();
-    const startDateObj = new Date(startDate);
+export const calculateExperience = (startDate: string): number => {
+  const start = new Date(startDate);
+  const now = new Date();
 
-    let experienceYears = currentDate.getFullYear() - startDateObj.getFullYear();
-    let experienceMonths = currentDate.getMonth() - startDateObj.getMonth();
-    if (experienceMonths < 0 || (experienceMonths === 0 && currentDate.getDate() < startDateObj.getDate())) {
-      experienceYears--;
-      experienceMonths += 12;
-    }
-    return `${experienceYears}.${experienceMonths -7}`;
-  };
+  // Subtract the gap months from the current date
+  now.setMonth(now.getMonth() - 9);
+
+  const years = now.getFullYear() - start.getFullYear();
+  const months = now.getMonth() - start.getMonth();
+
+  // Adjust if the current month is earlier than the start month
+  const totalYears = months < 0 ? years - 1 : years;
+  const experience = totalYears + (months < 0 ? (12 + months) / 12 : months / 12);
+
+  // Round to one decimal place
+  return parseFloat(experience.toFixed(1));
+};
+
+export const getCurrentYear = (): number => {
+  return new Date().getFullYear();
+};

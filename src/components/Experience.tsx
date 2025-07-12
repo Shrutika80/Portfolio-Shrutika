@@ -70,20 +70,19 @@ const Experience: React.FC = () => {
     const timeline = [
     {
       icon: workIcon,
-      date: 'June 2023 - Present',
-      title: 'Senior Software Engineer',
-      subtitle: 'Futops Technologies India Private Limited, Pune',
+      date: 'Jan 2025 - Present',
+      title: 'IT Analyst',
+      subtitle: 'Tata Consultancy Services, Pune',
       desc:  ['Mentored and led a team of 2-3 junior developers, providing guidance on best practices for code integration and performance optimization.',
       'Drive the adoption of new methodologies and technologies to enhance the performance, accessibility, and maintainability of front-end applications.',
       'Lead the "Road Event Detection" project, utilizing a Leaflet map to display camera locations for monitoring road activity and providing real-time alerts for events such as traffic congestion.',
       'Conduct regular code reviews to maintain high code quality and adherence to best practices.',
       'Participate actively in Agile development processes, contributing to sprint planning, daily stand-ups, and retrospectives.',
-      'Engage with clients to understand their requirements and provide technical guidance and solutions to meet their needs'
       ],
     },
     {
       icon: workIcon,
-      date: 'Nov 2020 - June 2023',
+      date: 'Nov 2020 - Jan 2025',
       title: 'Software Engineer',
       subtitle: 'Futops Technologies India Private Limited, Pune',
       desc: ['Collaborate with design and development teams to translate designs into responsive and interactive front-end code.',
@@ -91,7 +90,7 @@ const Experience: React.FC = () => {
       'Work in Agile environments, participating in sprint planning, daily stand-ups, and retrospectives.',
       'Continuously improve the codebase by adopting best practices for code efficiency and performance.',
       'Conduct regular code reviews to ensure adherence to coding standards and best practices.',
-      'Interact with clients to gather requirements and provide technical solutions to meet their needs.'
+      'Engage with clients to understand their requirements and provide technical guidance and solutions to meet their needs'
       ],
     },
     {
